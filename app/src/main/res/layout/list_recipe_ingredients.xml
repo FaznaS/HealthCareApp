@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--View for displaying ingredients in the recycler view in recipe details-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CARD_VIEW"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Ingredient Name-->
+        <TextView
+            android:id="@+id/textViewIngredient"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:text="Ingredient"/>
+
+        <!--Ingredient Image-->
+        <ImageView
+            android:id="@+id/imageViewIngredients"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+
+        <!--Ingredient Quantity-->
+        <TextView
+            android:id="@+id/textViewQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:text="Quantity"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

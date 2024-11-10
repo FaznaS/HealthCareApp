@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">HealthCare</string>
+    <string name="title_home">Home</string>
+    <string name="title_tracker">Tracker</string>
+    <string name="title_nutrition">Nutrition</string>
+    <string name="title_reminder">Reminder</string>
+    <string name="title_health_centers">Find Health Centers</string>
+    <string name="title_preferences">Preferences</string>
+    <string name="title_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map_api_key">***REMOVED***</string>
+    <string name="recipe_api_key">***REMOVED***</string>
+
+    <string-array name="tags">
+        <item>main course</item>
+        <item>side dish</item>
+        <item>dessert</item>
+        <item>appetizer</item>
+        <item>salad</item>
+        <item>bread</item>
+        <item>breakfast</item>
+        <item>soup</item>
+        <item>beverage</item>
+        <item>sauce</item>
+        <item>marinade</item>
+        <item>fingerfood</item>
+        <item>snack</item>
+        <item>drink</item>
+    </string-array>
+</resources>

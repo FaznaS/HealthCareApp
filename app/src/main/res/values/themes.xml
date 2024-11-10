@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HealthCare" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!--Background Color-->
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.HealthCare" parent="Base.Theme.HealthCare" />
+
+    <!--Navigation Theme-->
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <!--Design for card view-->
+    <style name="CARD_VIEW">
+        <item name="android:background">#D9D9D9</item>
+    </style>
+
+    <!--Button Color-->
+    <style name="BUTTON">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">#A554CD</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewSettingsHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Settings"
+                android:textSize="24dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewProfilePicture"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.215"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="@color/black"
+                    android:padding="5dp"
+                    android:src="@drawable/baseline_person_24"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/textViewSettingsUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
+                    android:text="Username"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.718"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicture"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.506" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/round_add_a_photo_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageViewProfilePicture"
+                    android:contentDescription="TODO" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--Views implemented to get data from the user-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Height(m)"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextSettingsHeight"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_corner_view"
+                android:textColor="@color/dark_grey"
+                android:textColorHint="@color/dark_grey"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Height" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Weight(kg)"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextSettingsWeight"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_corner_view"
+                android:textColor="@color/dark_grey"
+                android:textColorHint="@color/dark_grey"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Weight" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="New Password"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextSettingsNewPw"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round_corner_view"
+                android:textColor="@color/dark_grey"
+                android:textColorHint="@color/dark_grey"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="New Password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Confirm Password"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextSettingsConfirmPw"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_corner_view"
+                android:textColor="@color/dark_grey"
+                android:textColorHint="@color/dark_grey"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Confirm Password" />
+
+            <!--Update Settings Button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUpdate"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                style="@style/BUTTON"
+                android:layout_marginBottom="20dp"
+                android:onClick="addToList"
+                android:text="Update Profile" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

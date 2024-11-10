@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Elements in the Recycler View of the Nutrition Fragment-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/random_list_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CARD_VIEW"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--View For Recipe Name-->
+        <TextView
+            android:id="@+id/textViewRecipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipe Name"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:padding="8dp"/>
+
+        <!--Image View for Recipe-->
+        <ImageView
+            android:id="@+id/imageViewFood"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

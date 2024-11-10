@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_cottage_24"
+        android:title="@string/title_home"/>
+
+    <item
+        android:id="@+id/tracker"
+        android:icon="@drawable/ic_checklist_24"
+        android:title="@string/title_tracker"/>
+
+    <item
+        android:id="@+id/nutrition"
+        android:icon="@drawable/ic_dining_24"
+        android:title="@string/title_nutrition"/>
+
+    <item
+        android:id="@+id/reminder"
+        android:icon="@drawable/outline_alarm_24"
+        android:title="@string/title_reminder"/>
+</menu>

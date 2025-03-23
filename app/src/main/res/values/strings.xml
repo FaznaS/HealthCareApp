@@ -12,8 +12,8 @@
     <string name="close_nav">Close Navigation Drawer</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="map_api_key">***REMOVED***</string>
-    <string name="recipe_api_key">***REMOVED***</string>
+    <string name="map_api_key">YOUR_MAP_API_KEY</string>
+    <string name="recipe_api_key">YOUR_RECIPE_API_KEY</string>
 
     <string-array name="tags">
         <item>main course</item>
